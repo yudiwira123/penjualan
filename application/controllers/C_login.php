@@ -31,6 +31,10 @@ class C_login extends CI_Controller{
         session_destroy();
         redirect('./');
     }
+    public function FunctionName(Type $var = null)
+    {
+        json_encode();
+    }
 }
 
 ?>
