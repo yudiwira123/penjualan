@@ -1,0 +1,2 @@
+1. ubah ENV for upload gambar
+2. Create Link Storage (php artisan storage:link)
