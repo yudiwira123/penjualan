@@ -1,8 +1,7 @@
 </section>
-    
-	<script src="js/bootstrap.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="main.js"></script>
-    <script src="sidebar/script.js"></script>
+    <script src="<?php echo base_url().'sidebar/jquery-3.6.0.min.js'; ?>"></script>
+    <script src="<?php echo base_url().'js/popper.min.js'; ?>"></script>
+    <script src="<?php echo base_url().'js/bootstrap.js'; ?>"></script>
+    <script src="<?php echo base_url().'sidebar/script.js'; ?>"></script>
 </body>
 </html>

@@ -1,26 +1,31 @@
 const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
 
 
-toggle.addEventListener("click" , () =>{
+toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
-})
+});
 
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
+modeSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");
-    
-    if(body.classList.contains("dark")){
+
+    if (body.classList.contains("dark")) {
         modeText.innerText = "Light mode";
-    }else{
+        $('.table').addClass('table-dark');
+        $('.table').removeClass('bg-white');
+        $('h2').addClass('text-white');
+        $('label').addClass('text-white');
+    } else {
         modeText.innerText = "Dark mode";
-        
+        $('.table').removeClass('table-dark');
+        $('.table').addClass('bg-white');
+        $('h2').removeClass('text-white');
+        $('label').removeClass('text-white');
     }
+});
+$( document ).ready(function() {
+    $('.table').addClass('bg-white');
 });

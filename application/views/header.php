@@ -39,9 +39,6 @@
         <div class="menu-bar">
             <div class="menu">
 
-                <li class="search-box">
-                </li>
-
                 <ul class="menu-links ps-0">
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_beranda'; ?>">

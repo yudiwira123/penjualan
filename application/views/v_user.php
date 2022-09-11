@@ -5,7 +5,7 @@
         <a href="<?php echo base_url().'C_user/tambah'; ?>" class="btn btn-primary btn-sm float-right"><i class="fa-solid fa-plus"></i> Add</a>
     </div>
     <br>
-    <table class="table">
+    <table class="table table-hover bg-white">
         <thead class="table-secondary">
             <tr>
                 <th>#</th>
