@@ -4,7 +4,7 @@
     <br>
     <form method="post">
         <div class="form-group row">
-            <label for="nama" class="col-sm 2 col-form-label">Nama</label>
+            <label for="nama" class="col-sm 2 col-form-label">Name</label>
             <div class="col-sm-10">        
                 <input type="text" class="form-control mt-0 pt-0" name="name" autocomplete="off" placeholder="Nama User" value="<?php echo $edit->nama_user; ?>">
             </div>
@@ -16,13 +16,13 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="no_telp" class="col-sm 2 col-form-label">No.Telp</label>
+            <label for="no_telp" class="col-sm 2 col-form-label">Phone Number</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="pnumber" autocomplete="off" placeholder="No.Telp" value="<?php echo $edit->no_telp; ?>">
             </div>
         </div>
         <div class="form-group row">
-            <label for="jenis_kelamin" class="col-sm 2 col-form-label">Jenis Kelamin</label>
+            <label for="jenis_kelamin" class="col-sm 2 col-form-label">Gender</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="jk" autocomplete="off" placeholder="Jenis Kelamin" value="<?php echo $edit->jenis_kelamin; ?>">
             </div>
@@ -42,7 +42,7 @@
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
         <br>
-            <button type="submit" class="btn btn-primary">Simpan</button> 
+            <button type="submit" class="btn btn-primary">Save</button> 
         </div>
     </form>
 </div>

@@ -9,7 +9,7 @@
             <div class="col-md-3">
                 <form action="<?php echo base_url().'C_barang'; ?>" method="get">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="search" placeholder="Search">
+                        <input type="text" class="form-control" name="search" placeholder="Search...">
                         <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i> </button>
                     </div>
                 </div> 

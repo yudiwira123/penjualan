@@ -1,6 +1,6 @@
 <div Class="kanan">
     
-    <h2>COMMODITY</h2>
+    <h2>ITEMS</h2>
     <br>
     <hr>
     <div class="col-md-4">

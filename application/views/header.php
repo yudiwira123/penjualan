@@ -46,22 +46,21 @@
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
-
+                    <?php if($_SESSION['level']==1){ ?>
                     <li class="nav-link p-0">
-                        <a href="<?php echo base_url().'C_barang'; ?>">
-                        <?php if($_SESSION['level']==1){ ?>
+                        <a href="<?php echo base_url().'C_barang'; ?>">                        
                             <i class='bx bx-box icon' ></i>
                             <span class="text nav-text">Inventory</span>
                         </a>
                     </li>
 
-                    <li class="nav-link p-0">
+                    <li class="nav-link p-0">                      
                         <a href="<?php echo base_url().'C_user'; ?>">
-                        <?php } ?>
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">User Data</span>
                         </a>
                     </li>
+                    <?php } ?>
 
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_penjualan'; ?>">
