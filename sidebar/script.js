@@ -30,4 +30,6 @@ modeSwitch.addEventListener("click", () => {
 });
 $( document ).ready(function() {
     $('.table').addClass('bg-white');
+    $('.table').DataTable();
+    
 });

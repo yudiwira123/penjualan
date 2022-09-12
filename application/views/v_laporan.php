@@ -24,7 +24,7 @@
             <h2>Hasil Laporan</h2>
             <p>Awal Tanggal : <?php echo $this->input->post('awal'); ?></p>
             <p>Akhir Tanggal : <?php echo $this->input->post('akhir'); ?></p>
-            <table class="table light caption-top">
+            <table class="table light caption-top table-hover">
                 <thead class="table-secondary">
                     <tr>
                         <td>#</td>

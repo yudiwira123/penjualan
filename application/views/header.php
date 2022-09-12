@@ -9,6 +9,7 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="<?php echo base_url().'fontawesome/css/all.css';?>">
     <link rel="stylesheet" href="<?php echo base_url().'css/bootstrap.min.css';?>">
+    <link rel="stylesheet" href="<?php echo base_url().'tables/dataTables.bootstrap5.css';?>">
     <link rel="stylesheet" href="<?php echo base_url().'sidebar/style.css';?>">
     <link rel="stylesheet" href="<?php echo base_url().'asset/style.css';?>">
     

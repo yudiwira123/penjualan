@@ -4,14 +4,8 @@
     <br>
     <hr>
     <div class="col-md-4">
-            <form action="<?php echo base_url().'C_penjualan'; ?>" method="get">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" name="search" placeholder="Search">
-                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-magnifying-glass"></i> </button>
-                </div>
-            </form>
         </div> 
-    <table class="table">
+    <table class="table table-hover">
         <thead class="table-secondary">
             <tr>
                 <th>#</th>
@@ -36,7 +30,6 @@
 </div>
 <div Class="kiri">
     <h2>TRANSACTION</h2>
-    <br>
     <hr>
     <br>
     <h5>ID Transaction : <?php echo $kode_jual; ?></h5>

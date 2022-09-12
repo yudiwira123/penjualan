@@ -10,22 +10,6 @@ class C_barang extends CI_Controller{
             $data['tbbarang'] = $this->M_crud->tampil('tbbarang')->result();
         }
         $this->load->view('v_barang',$data);
-        // if($_POST){
-        //     $field['id_barang'] = $this->input->post('id_barang');
-        //     $field['nama_barang'] = $this->input->post('nama_barang');
-        //     $field['harga_barang'] = $this->input->post('harga');
-        //     $field['stok_barang'] = $this->input->post('stok');
-        //     $this->M_crud->tambah('tbbarang',$field);
-        //     redirect(base_url().'C_barang');
-        // }
-        $this->load->view('footer');
-        
-    }
-        function tambah(){
-        $this->load->model('M_crud');
-        $this->load->view('header');
-        $data['tbbarang'] = $this->M_crud->tampil('tbbarang')->result();
-        $this->load->view('v_tambah_barang',$data);
         if($_POST){
             $field['id_barang'] = $this->input->post('id_barang');
             $field['nama_barang'] = $this->input->post('nama_barang');
@@ -37,6 +21,22 @@ class C_barang extends CI_Controller{
         $this->load->view('footer');
         
     }
+    //     function tambah(){
+    //     $this->load->model('M_crud');
+    //     $this->load->view('header');
+    //     $data['tbbarang'] = $this->M_crud->tampil('tbbarang')->result();
+    //     $this->load->view('v_tambah_barang',$data);
+    //     if($_POST){
+    //         $field['id_barang'] = $this->input->post('id_barang');
+    //         $field['nama_barang'] = $this->input->post('nama_barang');
+    //         $field['harga_barang'] = $this->input->post('harga');
+    //         $field['stok_barang'] = $this->input->post('stok');
+    //         $this->M_crud->tambah('tbbarang',$field);
+    //         redirect(base_url().'C_barang');
+    //     }
+    //     $this->load->view('footer');
+        
+    // }
     
 
     function hapus($id){
