@@ -100,7 +100,6 @@
                 
             </div>
         </div>
-
     </nav>
 
     <section class="home">
