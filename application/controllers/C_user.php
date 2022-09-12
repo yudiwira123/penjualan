@@ -57,7 +57,7 @@ class C_user extends CI_Controller{
             }else{
             $field['password'] = md5($this->input->post('password'));
             }
-            $field['level'] = 2;
+            $field['level'] = $this->input->post('level');
             $this->M_crud->edit('tbuser',$field,$kode);
             redirect(base_url().'C_user');
         }
