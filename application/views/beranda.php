@@ -1,24 +1,24 @@
 <div class="container">
     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
         <div class="d-flex align-items-end flex-column">
-        <li class="nav-item dropdown float right">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li>
-                    <h class="dropdown-item">User Info</h>
-                </li>
-                <li>
-                    <hr class="dropdown-divider" />
-                </li>
-                <li>
-                    <h class="dropdown-item">Name :<?php echo $_SESSION['nama']; ?></h>
-                </li>
-                <li>
-                    <h class="dropdown-item">Level :<?php echo $_SESSION['level']; ?></h>
-                </li>
-            </ul>
-        </li>
-</div>
+            <li class="nav-item dropdown float right">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                        <h class="dropdown-item">User Info</h>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                        <h class="dropdown-item">Name :<?php echo $_SESSION['nama']; ?></h>
+                    </li>
+                    <li>
+                        <h class="dropdown-item">Level :<?php echo $_SESSION['level']; ?></h>
+                    </li>
+                </ul>
+            </li>
+        </div>
     </ul>
     <hr>
     <br>
