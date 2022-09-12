@@ -38,9 +38,11 @@
             <div class="col-sm-10">
                 <input type="password" class="form-control mt-0 pt-0" name="password" placeholder="Password">
                 <input type="hidden" class="form-control mt-0 pt-0" name="password_lama" value="<?php echo $edit->password; ?>">
+                <input type="hidden" class="form-control mt-0 pt-0" name="level" value="<?php echo $edit->level; ?>">
             </div>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
+
         <br>
             <button type="submit" class="btn btn-primary">Save</button> 
         </div>
