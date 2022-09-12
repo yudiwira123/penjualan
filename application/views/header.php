@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!----======== CSS ======== -->
+    <link rel="stylesheet" href="<?php echo base_url().'fontawesome/css/all.css';?>">
+    <link rel="stylesheet" href="<?php echo base_url().'css/bootstrap.min.css';?>">
     <link rel="stylesheet" href="<?php echo base_url().'sidebar/style.css';?>">
     <link rel="stylesheet" href="<?php echo base_url().'asset/style.css';?>">
-    <link rel="stylesheet" href="<?php echo base_url().'fontawesome/css/all.css';?>">
-    <link rel="stylesheet" href="<?php echo base_url().'css/bootstrap-reboot.min.css';?>">
-    <link rel="stylesheet" href="<?php echo base_url().'css/bootstrap-grid.min.css';?>">
-    <link rel="stylesheet" href="<?php echo base_url().'css/bootstrap.min.css';?>">
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
