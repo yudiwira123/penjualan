@@ -32,13 +32,7 @@
             <div class="col-sm-10">
                 <input type="password" class="form-control mt-0 pt-0" name="password" placeholder="Password">
             </div>
-        </div>
-        <div class="form-group row">
-            <label for="password" class="col-sm 2 col-form-label">Level</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control mt-0 pt-0" name="level" placeholder="Level">
-            </div>
-        </div>        
+        </div>       
         <div class="d-grid gap-2 col-6 mx-auto">
         <br>
         <button type="submit" class="btn btn-primary">Add</button>

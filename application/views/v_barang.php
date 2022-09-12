@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container bg-transparent">
 <br>
         <h2>INVENTORY</h2>
         <hr>

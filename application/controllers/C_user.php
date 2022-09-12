@@ -53,7 +53,7 @@ class C_user extends CI_Controller{
             $field['jenis_kelamin'] = $this->input->post('jk');
             $field['username'] = $this->input->post('uname');
             if(empty($this->input->post('password'))){
-                $field['password'] = md5($this->input->post('password_lama'));
+                $field['password'] = ($this->input->post('password_lama'));
             }else{
             $field['password'] = md5($this->input->post('password'));
             }
