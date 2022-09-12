@@ -1,6 +1,7 @@
 <div class="container">
 <br>
-        <h2>DATA BARANG</h2>
+        <h2>INVENTORY</h2>
+        <hr>
         <div class="d-flex align-items-end flex-column">
             <a href="<?php echo base_url().'C_barang/tambah'; ?>" class="btn btn-primary btn-sm float-right"><i class="fa-solid fa-plus"></i> Add</a>
         </div>
@@ -18,9 +19,9 @@
                 <tr>
                     <th>#</th>
                     <th>ID</th>
-                    <th>Nama</th>
-                    <th>Harga</th>
-                    <th>Stok</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -38,7 +39,7 @@
                 </tr>
                 <?php $no++; endforeach; }else{ ?>
                     <tr>
-                        <td colspan="5">Data tidak ditemukan</td>
+                        <td colspan="5">Data Not Found</td>
                     </tr>
                 <?php } ?>
             </tbody>

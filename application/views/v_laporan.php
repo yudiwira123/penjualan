@@ -1,5 +1,6 @@
 <div class="kiri">
-    <h1>Laporan</h1>
+    <h2>Laporan</h2>
+    <hr>
     <form action="<?php echo base_url().'C_laporan/post_laporan'; ?>" method="post">
         <div class="mb-3">
             <label class="form-label mb-1 pb-1">Tanggal Awal Membuat Laporan</label>
@@ -20,13 +21,13 @@
         <?php if($this->input->post('awal') > $this->input->post('akhir')) { ?>
             <h2>Tanggal akhir tidak boleh lebih besar dari tanggal awal</h2>
         <?php } else { ?>
-            <h1>Hasil Laporan</h1>
+            <h2>Hasil Laporan</h2>
             <p>Awal Tanggal : <?php echo $this->input->post('awal'); ?></p>
             <p>Akhir Tanggal : <?php echo $this->input->post('akhir'); ?></p>
             <table class="table light caption-top">
                 <thead class="table-secondary">
                     <tr>
-                        <td>No</td>
+                        <td>#</td>
                         <td>ID</td>
                         <td>Tanggal Transaksi</td>
                         <td>Pendapatan</td>

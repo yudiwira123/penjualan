@@ -1,6 +1,7 @@
 <div class="container">
 <br>
-    <h2>DATA USER</h2>
+    <h2>USER DATA</h2>
+    <hr>
     <div class="d-flex align-items-end flex-column">
         <a href="<?php echo base_url().'C_user/tambah'; ?>" class="btn btn-primary btn-sm float-right"><i class="fa-solid fa-plus"></i> Add</a>
     </div>
@@ -9,11 +10,11 @@
         <thead class="table-secondary">
             <tr>
                 <th>#</th>
-                <th>Nama</th>
+                <th>Name</th>
                 <th>ID</th>
                 <th>Username</th>
                 <th>No.Telp</th>
-                <th>Jenis Kelamin</th>
+                <th>Gender</th>
                 <th>Level</td>
                 <th>Action</th>
             </tr>

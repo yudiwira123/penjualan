@@ -1,7 +1,8 @@
 <div Class="kanan">
     
-    <h2>BARANG</h2>
+    <h2>COMMODITY</h2>
     <br>
+    <hr>
     <div class="col-md-4">
             <form action="<?php echo base_url().'C_penjualan'; ?>" method="get">
                 <div class="input-group mb-3">
@@ -13,11 +14,11 @@
     <table class="table">
         <thead class="table-secondary">
             <tr>
-                <th>No</th>
+                <th>#</th>
                 <th>ID</th>
-                <th>Nama Barang</th>
-                <th>Harga Barang</th>
-                <th>Stok</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -34,17 +35,18 @@
 </table>
 </div>
 <div Class="kiri">
-    <h2>TRANSAKSI</h2>
+    <h2>TRANSACTION</h2>
     <br>
+    <hr>
     <br>
-    <h5>ID Transaksi : <?php echo $kode_jual; ?></h5>
+    <h5>ID Transaction : <?php echo $kode_jual; ?></h5>
     <table class="table">
         <thead class="table-secondary">
         <tr>
-            <th>No</th>
+            <th>#</th>
             <th>ID</th>
-            <th>Harga Barang</th>
-            <th>Jumlah Barang</th>
+            <th>Price</th>
+            <th>Name</th>
             <th>Total</th>
             <th>Action</th>
 </thead>

@@ -50,30 +50,30 @@
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_barang'; ?>">
                         <?php if($_SESSION['level']==1){ ?>
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Data Barang</span>
+                            <i class='bx bx-box icon' ></i>
+                            <span class="text nav-text">Inventory</span>
                         </a>
                     </li>
 
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_user'; ?>">
                         <?php } ?>
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Data User</span>
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">User Data</span>
                         </a>
                     </li>
 
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_penjualan'; ?>">
                             <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">Transaksi</span>
+                            <span class="text nav-text">Transaction</span>
                         </a>
                     </li>
 
                     <li class="nav-link p-0">
                         <a href="<?php echo base_url().'C_laporan'; ?>">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Laporan</span>
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Report</span>
                         </a>
                     </li>
                 </ul>
