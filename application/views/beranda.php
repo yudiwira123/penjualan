@@ -1,5 +1,7 @@
 <div class="container">
     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <br>
+        <h2>DASHBOARD</h2>
         <div class="d-flex align-items-end flex-column">
             <li class="nav-item dropdown float right">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
@@ -8,7 +10,7 @@
                         <h class="dropdown-item">User Info</h>
                     </li>
                     <li>
-                        <hr class="dropdown-divider" />
+                        <hr class="dropdown-divider">
                     </li>
                     <li>
                         <h class="dropdown-item">Name :<?php echo $_SESSION['nama']; ?></h>
@@ -21,7 +23,6 @@
         </div>
     </ul>
     <hr>
-    <br>
     <div class="row">
         <div class="col-xl-3 col-md-6">
             <div class="card bg-primary text-white mb-4">
