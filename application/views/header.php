@@ -58,7 +58,7 @@ if (!$_SESSION['id_user']) {
                         <li class="nav-link p-0">
                             <a href="<?php echo base_url() . 'C_user'; ?>">
                                 <i class='bx bx-user icon'></i>
-                                <span class="text nav-text">User Data</span>
+                                <span class="text nav-text">Users Data</span>
                             </a>
                         </li>
                     <?php } ?>

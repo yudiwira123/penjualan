@@ -1,7 +1,7 @@
 <div class="kiri">
-    <h2>Laporan</h2>
+    <h2>Report</h2>
     <hr>
-    <form action="<?php echo base_url().'C_laporan/post_laporan'; ?>" method="post">
+    <form action="<?php echo base_url() . 'C_laporan/post_laporan'; ?>" method="post">
         <div class="mb-3">
             <label class="form-label mb-1 pb-1">Tanggal Awal Membuat Laporan</label>
             <input type="date" class="form-control mt-0 pt-0" name="awal" required>
@@ -11,14 +11,14 @@
             <input type="date" class="form-control mt-0 pt-0" name="akhir" required>
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="submit" class="btn btn-primary">Simpan</button> 
+            <button type="submit" class="btn btn-primary">Simpan</button>
         </div>
     </form>
 </div>
 
 <div class="kanan">
-    <?php if($_POST){ ?>
-        <?php if($this->input->post('awal') > $this->input->post('akhir')) { ?>
+    <?php if ($_POST) { ?>
+        <?php if ($this->input->post('awal') > $this->input->post('akhir')) { ?>
             <h2>Tanggal akhir tidak boleh lebih besar dari tanggal awal</h2>
         <?php } else { ?>
             <h2>Hasil Laporan</h2>
@@ -34,20 +34,22 @@
                     </tr>
                 </thead>
                 <?php if ($laporan) { ?>
-                <tbody>
-                    <?php $no=1; foreach ($laporan as $value): ?>
-                    <tr>
-                        <td><?php echo $no; ?></td>
-                        <td><?php echo $value->id_transaksi; ?></td>
-                        <td><?php echo $value->tanggal_transaksi; ?></td>
-                        <td>Rp.<?php echo number_format($value->sub_total); ?></td>
-                    </tr>
-                    <?php $no++; endforeach; ?>
-                    <tr>
-                        <td colspan="3">Total Pendapatan :</td>
-                        <td>Rp.<?php echo number_format ($total->total); ?></td>
-                    </tr>
-                </tbody>
+                    <tbody>
+                        <?php $no = 1;
+                        foreach ($laporan as $value) : ?>
+                            <tr>
+                                <td><?php echo $no; ?></td>
+                                <td><?php echo $value->id_transaksi; ?></td>
+                                <td><?php echo $value->tanggal_transaksi; ?></td>
+                                <td>Rp.<?php echo number_format($value->sub_total); ?></td>
+                            </tr>
+                        <?php $no++;
+                        endforeach; ?>
+                        <tr>
+                            <td colspan="3">Total Pendapatan :</td>
+                            <td>Rp.<?php echo number_format($total->total); ?></td>
+                        </tr>
+                    </tbody>
                 <?php } else { ?>
                     <tbody>
                         <tr>
@@ -57,7 +59,7 @@
                 <?php } ?>
             </table>
         <?php } ?>
-    <?php } else{ ?>
+    <?php } else { ?>
         <h2>Tidak Ada Laporan</h2>
     <?php } ?>
 </div>
