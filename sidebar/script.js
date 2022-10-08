@@ -20,6 +20,7 @@ modeSwitch.addEventListener("click", () => {
         $('h3').addClass('text-white');
         $('p').addClass('text-white');
         $('label').addClass('text-white');
+        $('h5').addClass('text-white');
     } else {
         modeText.innerText = "Dark mode";
         $('.table').removeClass('table-dark');
@@ -28,6 +29,7 @@ modeSwitch.addEventListener("click", () => {
         $('h3').removeClass('text-white');
         $('p').removeClass('text-white');
         $('label').removeClass('text-white');
+        $('h5').removeClass('text-white');
     }
 });
 $( document ).ready(function() {

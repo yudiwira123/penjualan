@@ -80,5 +80,3 @@ class C_penjualan extends CI_Controller{
         redirect(base_url().'C_penjualan');
     }
 }
-
-?>

@@ -29,10 +29,10 @@
     </table>
 </div>
 <div Class="kiri">
-    <h2>TRANSACTION</h2>
+    <h2>Transaksi</h2>
     <hr>
     <br>
-    <h5>ID Transaction : <?php echo $kode_jual; ?></h5>
+    <h5>ID Transaksi : <?php echo $kode_jual; ?></h5>
     <table class="table">
         <thead class="table-secondary">
             <tr>
