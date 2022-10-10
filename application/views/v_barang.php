@@ -1,11 +1,11 @@
 <div class="container">
     <br>
-    <h2>INVENTORY</h2>
+    <h2>DATA BARANG</h2>
     <hr>
     <div class="d-flex align-items-end flex-column">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i>
-            Add
+            Tambah
         </button>
     </div>
     <br>
@@ -14,9 +14,9 @@
             <tr>
                 <th>#</th>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Stock</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Stok</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -37,7 +37,7 @@
                 endforeach;
             } else { ?>
                 <tr>
-                    <td colspan="5">Data Not Found</td>
+                    <td colspan="5">Data tidak ditemukan</td>
                 </tr>
             <?php } ?>
         </tbody>
@@ -51,7 +51,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add Item</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Barang</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -63,19 +63,19 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="nama" class="col-sm 2 col-form-label">Name</label>
+                        <label for="nama" class="col-sm 2 col-form-label">Nama</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="nama_barang" autocomplete="off" placeholder="Nama Barang">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="harga" class="col-sm 2 col-form-label">Price</label>
+                        <label for="harga" class="col-sm 2 col-form-label">Harga</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="harga" autocomplete="off" placeholder="Harga Barang">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="id" class="col-sm 2 col-form-label">Stock</label>
+                        <label for="id" class="col-sm 2 col-form-label">Stok</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="stok" autocomplete="off" placeholder="Stok Barang">
                         </div>
@@ -83,8 +83,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
             </div>
             </form>
         </div>

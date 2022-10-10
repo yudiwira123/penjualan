@@ -1,5 +1,5 @@
 <div Class="kanan">
-    <h2>ITEMS</h2>
+    <h2>Barang</h2>
     <hr>
     <div class="col-md-4">
     </div>
@@ -8,9 +8,9 @@
             <tr>
                 <th>#</th>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Stock</th>
+                <th>Nama</th>
+                <th>Harga</th>
+                <th>Stok</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -38,8 +38,8 @@
             <tr>
                 <th>#</th>
                 <th>ID</th>
-                <th>Price</th>
-                <th>Buy</th>
+                <th>Harga</th>
+                <th>Beli</th>
                 <th>Total</th>
                 <th>Action</th>
         </thead>

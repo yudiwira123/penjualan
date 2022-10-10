@@ -1,11 +1,11 @@
 <br>
 <div class="container" style="width:600px;height:150px;">
-    <h2>Edit User</h2>
+    <h2>Edit Data User</h2>
     <br>
     <form method="post">
         <div class="form-group row">
-            <label for="nama" class="col-sm 2 col-form-label">Name</label>
-            <div class="col-sm-10">        
+            <label for="nama" class="col-sm 2 col-form-label">Nama</label>
+            <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="name" autocomplete="off" placeholder="Nama User" value="<?php echo $edit->nama_user; ?>">
             </div>
         </div>
@@ -16,13 +16,13 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="no_telp" class="col-sm 2 col-form-label">Phone Number</label>
+            <label for="no_telp" class="col-sm 2 col-form-label">Nomor Telp.</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="pnumber" autocomplete="off" placeholder="No.Telp" value="<?php echo $edit->no_telp; ?>">
             </div>
         </div>
         <div class="form-group row">
-            <label for="jenis_kelamin" class="col-sm 2 col-form-label">Gender</label>
+            <label for="jenis_kelamin" class="col-sm 2 col-form-label">Jenis Kelamin</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="jk" autocomplete="off" placeholder="Jenis Kelamin" value="<?php echo $edit->jenis_kelamin; ?>">
             </div>
@@ -43,8 +43,8 @@
         </div>
         <div class="d-grid gap-2 col-6 mx-auto">
 
-        <br>
-            <button type="submit" class="btn btn-primary">Save</button> 
+            <br>
+            <button type="submit" class="btn btn-primary">Save</button>
         </div>
     </form>
 </div>

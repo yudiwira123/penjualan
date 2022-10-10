@@ -13,7 +13,7 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li>
-                        <h class="dropdown-item">Name :<?php echo $_SESSION['nama']; ?></h>
+                        <h class="dropdown-item">Nama :<?php echo $_SESSION['nama']; ?></h>
                     </li>
                     <li>
                         <h class="dropdown-item">Level :<?php echo $_SESSION['level']; ?></h>
@@ -30,7 +30,7 @@
                     <h2><?php echo count($user) ?></h2>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <h3 class="small text-white">Users</h3>
+                    <h3 class="small text-white">Data User</h3>
                     <div class="small text-white"></div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <h2><?php echo count($barang) ?></h2>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <h3 class="small text-white">Items</h3>
+                    <h3 class="small text-white">Data Barang</h3>
                     <div class="small text-white"></div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <h2><?php echo count($transaksi) ?></h2>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <h3 class="small text-white">Transactions</h3>
+                    <h3 class="small text-white">Transaksi</h3>
                     <div class="small text-white"></div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <h2>Rp.<?php echo number_format($sum) ?></h2>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <h3 class="small text-white">Revenue</h3>
+                    <h3 class="small text-white">Penghasilan</h3>
                     <div class="small text-white"></div>
                 </div>
             </div>

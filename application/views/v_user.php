@@ -1,11 +1,11 @@
 <div class="container">
     <br>
-    <h2>USER DATA</h2>
+    <h2>DATA USER</h2>
     <hr>
     <div class="d-flex align-items-end flex-column">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i>
-            Add
+            Tambah
         </button>
     </div>
     <br>
@@ -13,11 +13,11 @@
         <thead class="table-secondary">
             <tr>
                 <th>#</th>
-                <th>Name</th>
+                <th>Nama</th>
                 <th>ID</th>
                 <th>Username</th>
                 <th>No.Telp</th>
-                <th>Gender</th>
+                <th>Jenis Kelamin</th>
                 <th>Level</td>
                 <th>Action</th>
             </tr>
@@ -44,25 +44,25 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tambah User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form method="post">
                     <div class="form-group row">
-                        <label for="Nama" class="col-sm 2 col-form-label">Name</label>
+                        <label for="Nama" class="col-sm 2 col-form-label">Nama</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="name" placeholder="Nama User" autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="no_telp" class="col-sm 2 col-form-label">Phone Number</label>
+                        <label for="no_telp" class="col-sm 2 col-form-label">Nomor Telp.</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="pnumber" placeholder="No.Telp" autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="jenis_kelamin" class="col-sm 2 col-form-label">Gender</label>
+                        <label for="jenis_kelamin" class="col-sm 2 col-form-label">Jenis Kelamin</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control mt-0 pt-0" name="jk" placeholder="Jenis Kelamin" autocomplete="off">
                         </div>
@@ -81,8 +81,8 @@
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
             </div>
             </form>
         </div>

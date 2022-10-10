@@ -1,5 +1,5 @@
 <div class="kiri">
-    <h2>Report</h2>
+    <h2>Laporan</h2>
     <hr>
     <form action="<?php echo base_url() . 'C_laporan/post_laporan'; ?>" method="post">
         <div class="mb-3">
