@@ -2,7 +2,8 @@
 class C_user extends CI_Controller{
     function index(){
         $this->load->model('M_crud');
-        $this->load->view('header');
+        $title['judul'] = "User";
+        $this->load->view('header', $title);
         $data['tbuser'] = $this->M_crud->tampil('tbuser')->result();
         $this->load->view('v_user',$data);
         if($_POST){

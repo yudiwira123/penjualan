@@ -17,7 +17,7 @@
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>SKRIPSI</title>
+    <title><?php echo $judul ?></title>
 </head>
 <?php
 if (!$_SESSION['id_user']) {
