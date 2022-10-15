@@ -2,7 +2,8 @@
 class C_barang extends CI_Controller{
     function index(){
         $this->load->model('M_crud');
-        $this->load->view('header');
+        $title['judul'] = "Data Barang";
+        $this->load->view('header', $title);
         if ($_GET) {
             $data['tbbarang'] = $this->M_crud->cari('tbbarang', $_GET['search'], 'id_barang', 'nama_barang')->result();
         }
@@ -64,5 +65,3 @@ class C_barang extends CI_Controller{
     }
     
 }
-
-?>

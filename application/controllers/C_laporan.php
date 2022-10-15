@@ -3,7 +3,8 @@ class C_laporan extends CI_Controller
 {
     function index()
     {
-        $this->load->view('header');
+        $title['judul'] = "Laporan";
+        $this->load->view('header', $title);
         $this->load->view('v_laporan');
         $this->load->view('footer');
     }
