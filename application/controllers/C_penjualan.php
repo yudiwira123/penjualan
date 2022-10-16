@@ -41,7 +41,7 @@ class C_penjualan extends CI_Controller
         $cekpenjualan = $this->M_crud->tampil_id('tbdetail_transaksi', $wherecek)->row();
         if (empty($cekpenjualan)) {
             if ($tbbarang->stok_barang <= 0) {
-               $pesan = "Stok Habis" ;
+                $this->session->set_tempdata('msg', 'Stok Habis');
             } else {
                 $field['id_barang'] = $id;
                 $field['id_transaksi'] = $kode_jual;
@@ -51,7 +51,7 @@ class C_penjualan extends CI_Controller
             }
         } else {
             if ($tbbarang->stok_barang <= 0) {
-                $pesan = "Stok Terbatas" ;
+                $this->session->set_tempdata('msg', 'Stok Habis');
              } else {
                 $field['jumlah_barang'] = $cekpenjualan->jumlah_barang + 1;
                 $field['total'] = $field['jumlah_barang'] * $tbbarang->harga_barang;
@@ -91,6 +91,7 @@ class C_penjualan extends CI_Controller
         if ($kondisi <= 0) {
             $barang['stok_barang'] = $brg->stok_barang + 1;
             $field['jumlah_barang'] = $_POST['old_jml_barang'];
+            $this->session->set_tempdata('msg', 'Stok Barang kurang dari ' . $_POST['jml_barang']);
         } else {
             $barang['stok_barang'] = $brg->stok_barang - $_POST['jml_barang'] + $_POST['old_jml_barang'] + 1;
             $field['jumlah_barang'] = $_POST['jml_barang'];
