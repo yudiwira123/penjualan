@@ -40,15 +40,23 @@ class C_penjualan extends CI_Controller
         $wherecek['id_transaksi'] = $kode_jual;
         $cekpenjualan = $this->M_crud->tampil_id('tbdetail_transaksi', $wherecek)->row();
         if (empty($cekpenjualan)) {
-            $field['id_barang'] = $id;
-            $field['id_transaksi'] = $kode_jual;
-            $field['jumlah_barang'] = 1;
-            $field['total'] = $tbbarang->harga_barang;
-            $this->M_crud->tambah('tbdetail_transaksi', $field);
+            if ($tbbarang->stok_barang <= 0) {
+               $pesan = "Stok Habis" ;
+            } else {
+                $field['id_barang'] = $id;
+                $field['id_transaksi'] = $kode_jual;
+                $field['jumlah_barang'] = 1;
+                $field['total'] = $tbbarang->harga_barang;
+                $this->M_crud->tambah('tbdetail_transaksi', $field);
+            }
         } else {
-            $field['jumlah_barang'] = $cekpenjualan->jumlah_barang + 1;
-            $field['total'] =  $field['jumlah_barang'] * $tbbarang->harga_barang;
-            $this->M_crud->edit('tbdetail_transaksi', $field, $wherecek);
+            if ($tbbarang->stok_barang <= 0) {
+                $pesan = "Stok Terbatas" ;
+             } else {
+                $field['jumlah_barang'] = $cekpenjualan->jumlah_barang + 1;
+                $field['total'] = $field['jumlah_barang'] * $tbbarang->harga_barang;
+                $this->M_crud->edit('tbdetail_transaksi', $field, $wherecek);
+             }
         }
         redirect(base_url() . 'C_penjualan');
     }
@@ -79,9 +87,15 @@ class C_penjualan extends CI_Controller
         $where['id_barang'] = $pecah[1];
         $id_brg['id_barang'] = $pecah[1];
         $brg = $this->M_crud->tampil_id('tbbarang', $id_brg)->row();
-        $barang['stok_barang'] = $brg->stok_barang - $_POST['jml_barang'] + $_POST['old_jml_barang'] + 1;
+        $kondisi = ($brg->stok_barang + $_POST['old_jml_barang'] + 1) - $_POST['jml_barang'];
+        if ($kondisi <= 0) {
+            $barang['stok_barang'] = $brg->stok_barang + 1;
+            $field['jumlah_barang'] = $_POST['old_jml_barang'];
+        } else {
+            $barang['stok_barang'] = $brg->stok_barang - $_POST['jml_barang'] + $_POST['old_jml_barang'] + 1;
+            $field['jumlah_barang'] = $_POST['jml_barang'];
+        }
         $this->M_crud->edit('tbbarang', $barang, $id_brg);
-        $field['jumlah_barang'] = $_POST['jml_barang'];
         $this->M_crud->edit('tbdetail_transaksi', $field, $where);
         redirect(base_url() . 'C_penjualan');
     }
