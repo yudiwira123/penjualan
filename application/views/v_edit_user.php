@@ -16,18 +16,6 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="no_telp" class="col-sm 2 col-form-label">Nomor Telp.</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control mt-0 pt-0" name="pnumber" autocomplete="off" placeholder="No.Telp" value="<?php echo $edit->no_telp; ?>">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="jenis_kelamin" class="col-sm 2 col-form-label">Jenis Kelamin</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control mt-0 pt-0" name="jk" autocomplete="off" placeholder="Jenis Kelamin" value="<?php echo $edit->jenis_kelamin; ?>">
-            </div>
-        </div>
-        <div class="form-group row">
             <label for="username" class="col-sm 2 col-form-label">Username</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control mt-0 pt-0" name="uname" autocomplete="off" placeholder="Username" value="<?php echo $edit->username; ?>">
