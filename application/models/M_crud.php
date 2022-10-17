@@ -46,6 +46,12 @@ class M_crud extends CI_model{
         $result = $this->db->query($sql);
         return $result->row()->sub_total;
     }
+	function tampil_idlike($table, $id, $jenis)
+	{
+		$this->db->like($id, $jenis, 'after');
+		$this->db->select('id_barang');
+		return $this->db->get($table);
+	}
 }
 
 ?>

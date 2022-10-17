@@ -10,9 +10,13 @@ class C_barang extends CI_Controller{
         else {
             $data['tbbarang'] = $this->M_crud->tampil('tbbarang')->result();
         }
+		if ($_POST) {
+			
+		}
         $this->load->view('v_barang',$data);
         if($_POST){
-            $field['id_barang'] = $this->input->post('id_barang');
+			$lastid = $this->M_crud->tampil_idlike('tbbarang', 'id_barang', $this->input->post('jenis'))->last_row();
+			$field['id_barang'] = $lastid->id_barang + 1;
             $field['nama_barang'] = $this->input->post('nama_barang');
             $field['harga_barang'] = $this->input->post('harga');
             $field['stok_barang'] = $this->input->post('stok');
